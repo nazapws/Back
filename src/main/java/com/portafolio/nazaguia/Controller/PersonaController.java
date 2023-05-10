@@ -32,7 +32,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"http://localhost:4200", "https://front-4f595.web.app"})
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://front-4f595.web.app")
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
@@ -67,7 +68,7 @@ public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPers
     Persona persona = personaService.getOne(id).get();
     
     persona.setNombre(dtopersona.getNombre());
-    persona.setApellido(dtopersona.getApellido());
+    persona.setDescripcion(dtopersona.getDescripcion());
     persona.setDescripcion(dtopersona.getDescripcion());
     persona.setImg(dtopersona.getImg());
     

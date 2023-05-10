@@ -33,8 +33,8 @@ com\portafolio\nazaguia\Entity\hys.class
 com\portafolio\nazaguia\Controller\CEducacion.class
 com\portafolio\nazaguia\Service\ImpPersonaService.class
 com\portafolio\nazaguia\Repository\IPersonaRepository.class
-com\portafolio\nazaguia\WebConfig.class
 com\portafolio\nazaguia\Service\Shys.class
 com\portafolio\nazaguia\Controller\CHys.class
+com\portafolio\nazaguia\Interface\IPersonaService.class
 com\portafolio\nazaguia\Security\Dto\NuevoUsuario.class
 com\portafolio\nazaguia\Security\Service\RolService.class
