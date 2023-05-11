@@ -71,7 +71,7 @@ public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPers
     Persona persona = personaService.getOne(id).get();
     
     persona.setNombre(dtopersona.getNombre());
-    persona.setDescripcion(dtopersona.getDescripcion());
+    persona.setApellido(dtopersona.getApellido());
     persona.setDescripcion(dtopersona.getDescripcion());
     persona.setImg(dtopersona.getImg());
     
